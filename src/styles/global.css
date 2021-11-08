@@ -1,0 +1,4 @@
+.swiper-wrapper {
+    align-items: center !important;
+    transition: all .3s linear;
+}
