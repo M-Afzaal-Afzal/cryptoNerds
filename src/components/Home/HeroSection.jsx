@@ -5,6 +5,7 @@ import Image from 'next/image';
 import SwiperCore, {
     Navigation
 } from 'swiper';
+import useMediaQuery from "@mui/material/useMediaQuery";
 
 // install Swiper modules
 SwiperCore.use([Navigation]);
@@ -34,6 +35,9 @@ const HeroSection = () => {
         },
     ];
 
+    const isLargerThan700px = useMediaQuery('(min-width:700px)');
+
+
     return (
         <Box sx={{
             background: (theme) => theme.palette.primary.main,
@@ -45,7 +49,7 @@ const HeroSection = () => {
                     loop={true}
                     centeredSlides={true}
                     spaceBetween={50}
-                    slidesPerView={3}
+                    slidesPerView={isLargerThan700px ? 3 : 1}
                     onSlideChange={() => console.log('slide change')}
                     onSwiper={(swiper) => console.log(swiper)}
                 >
