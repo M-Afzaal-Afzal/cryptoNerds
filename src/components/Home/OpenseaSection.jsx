@@ -16,7 +16,7 @@ const OpenseaSection = () => {
                     display: 'grid',
                     gridTemplateColumns: 'auto auto auto 1fr',
                     gridGap: '2rem',
-                    alignItems: 'center',
+                    alignItems: 'end',
                     position: 'relative',
                 }}>
                     {/* 1st Image*/}
