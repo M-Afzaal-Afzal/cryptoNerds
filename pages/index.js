@@ -14,7 +14,7 @@ const Index = () => {
             <HeroSection/>
             <OverviewSection/>
             <RoadmapSection/>
-            {/*<OpenseaSection/>*/}
+            <OpenseaSection/>
             <FaqSection/>
         </Box>
     );

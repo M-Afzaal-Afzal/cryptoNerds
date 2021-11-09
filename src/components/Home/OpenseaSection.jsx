@@ -1,5 +1,5 @@
 import React from 'react';
-import {Box, Container} from "@mui/material";
+import {Box, Container, Typography} from "@mui/material";
 import Image from 'next/image';
 import ButtonPink from "../common/ButtonPink";
 
@@ -25,7 +25,10 @@ const OpenseaSection = () => {
                         zIndex: 1,
                         gridRow: '1/-1',
                         gridColumn: '1/2',
-                        display: 'flex',
+                        display: {
+                            xs: 'none',
+                            xl: 'flex',
+                        },
                         alignItems: 'flex-end',
                     }}>
                         <Image src={'/opensea1.png'} width={177} height={230}/>
@@ -36,20 +39,27 @@ const OpenseaSection = () => {
                         zIndex: 1,
                         gridRow: '1/-1',
                         gridColumn: '2/3',
-                        display: 'flex',
+                        display: {
+                            xs: 'none',
+                            xl: 'flex',
+                        },
                         alignItems: 'flex-end',
                     }}>
                         <Image src={'/opensea2.png'} width={237} height={321}/>
 
                     </Box>
 
-                {/*    3rd Image  */}
+                    {/*    3rd Image  */}
                     <Box sx={{
                         zIndex: 1,
                         gridRow: '1/-1',
                         gridColumn: '3/4',
-                        display: 'flex',
+                        display: {
+                            xs: 'none',
+                            xl: 'flex',
+                        },
                         alignItems: 'flex-end',
+
                     }}>
                         <Image src={'/opensea3.png'} width={177} height={230}/>
 
@@ -57,35 +67,71 @@ const OpenseaSection = () => {
 
                     {/* Open Sea Button container*/}
                     <Box sx={{
+
                         marginTop: 'auto',
-                        height: '140px',
+                        // height: '140px',
+                        py: '3rem',
                         gridColumn: '1/-1',
                         gridRow: '1/-1',
                         background: 'linear-gradient(92.78deg, #eb9fef 0%, #03254e 100%)',
                         borderRadius: '31px',
-                        display: 'flex',
-                        justifyContent: 'flex-end',
+                        display: 'grid',
+                        gridGap: '2rem',
+                        gridTemplateColumns: {xs: '1fr',lg: 'auto auto'},
+                        px: {
+                            xs: '1rem',
+                            sm: '2rem',
+                            lg: '3rem',
+                            xl: "4rem",
+                        },
+                        justifyContent: {
+                            xs: 'space-between',
+                            xl: 'flex-end'
+                        },
                         alignItems: 'center',
                     }}>
+                        <Typography
+                            sx={{
+                                display: {
+                                    xs: 'block',
+                                    xl: 'none',
+                                },
+                                // ml: '4rem',
+                                // color: "primary",
+                                textAlign: {
+                                    xs: 'center',
+                                    lg: 'left',
+                                },
+                                fontSize: '2rem',
+                                color: theme => theme.palette.primary.main,
+                            }}
+
+                        >
+                            Have a look at the market
+                        </Typography>
                         <ButtonPink sx={{
-                            mr: '4rem',
+                            // mr: '4rem',
                         }}>
                             Opensea
                         </ButtonPink>
                     </Box>
 
-                {/*    Back Circle */}
+                    {/*    Back Circle */}
 
                     <Box sx={{
+                        display: {
+                            xs: 'none',
+                            xl: 'block',
+                        },
                         position: 'absolute',
-                        width: '600px',
-                        height: '600px',
+                        width: '550px',
+                        height: '550px',
                         background: (theme) => theme.palette.secondary.main,
                         borderRadius: '50%',
                         filter: 'blur(3rem)',
                         left: 30,
-                        top: -110,
-                    }} />
+                        top: -100,
+                    }}/>
 
                 </Box>
 

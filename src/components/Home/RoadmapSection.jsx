@@ -22,7 +22,10 @@ const RoadmapSection = () => {
     return (
         <Box sx={{
             background: (theme) => theme.palette.primary.main,
-            py: '6rem',
+            py: {
+                xs: '3rem',
+                xl: '6rem',
+            },
         }}>
             <Container maxWidth={'xxl'}>
                 {/* top Heading*/}
