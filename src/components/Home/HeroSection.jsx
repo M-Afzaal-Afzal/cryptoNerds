@@ -55,7 +55,7 @@ const HeroSection = () => {
                 >
                     {
                         slides.map(({id, imgSrc}) => (
-                            <SwiperSlide style={{
+                            <SwiperSlide key={id} style={{
                                 alignItems: 'center',
                             }}>
                                 {({ isActive }) => (
@@ -63,7 +63,7 @@ const HeroSection = () => {
                                         display: 'flex',
                                         justifyContent: "center",
                                     }}>
-                                        <Image src={imgSrc} width={isActive ? 374 : 293 } height={isActive ? 514 : 402} />
+                                        <Image priority={true} src={imgSrc} width={isActive ? 374 : 293 } height={isActive ? 514 : 402} />
                                     </Box>
                                 )}
                             </SwiperSlide>

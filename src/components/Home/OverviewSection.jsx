@@ -48,23 +48,40 @@ const OverviewSection = () => {
                 }}>
 
                     {/* Left Side Images with circle background*/}
-                    <Box sx={{position: 'relative',display: 'flex',justifyContent: 'center',alignItems: 'center'}}>
+                    <Box sx={{position: 'relative', display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
                         <Box sx={{
                             background: 'rgba(244, 132, 255, .7)',
                             width: {xs: '250px', sm: '280px', md: '350px', lg: '400px', xl: "526px"},
                             height: {xs: '250px', sm: '280px', md: '350px', lg: '400px', xl: "526px"},
                             borderRadius: '50%',
-
+                            filter: 'blur(3rem)',
                             display: 'flex',
                             justifyContent: 'center',
                             alignItems: 'center',
                             '& > span': {
-                                transform: 'scale(1.1)',
+                                transform: {
+                                    xs: 'scale(1.5)',
+                                    sm: 'scale(1.5)',
+                                    md: 'scale(1.3)',
+                                    xl: 'scale(1.1)'
+                                },
                             }
+                        }}/>
+
+
+                        <Box sx={{
+                            position: 'absolute', top: {
+                                xs: 0,
+                                lg: '50%',
+                            }, left: {
+                                xs: '0',
+                                lg: '50%',
+                                xl: 0,
+                            }, transform: {xs: 'unset',lg: 'translate(-50%,-50%)',xl: 'translate(-0,-50%)'}
                         }}>
                             <Image src={'/overview.png'} width={658} height={361}/>
-
                         </Box>
+
                     </Box>
 
                     {/* Right side text content*/}
