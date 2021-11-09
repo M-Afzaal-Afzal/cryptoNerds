@@ -2,6 +2,7 @@ import React from 'react';
 import {Box, Container} from "@mui/material";
 import TopDashHeading from "../common/TopDashHeading";
 import Image from 'next/image';
+import Faqs from "./Faqs";
 
 const FaqSection = () => {
     return (
@@ -12,7 +13,10 @@ const FaqSection = () => {
                 <Box sx={{
                     display: 'flex',
                     alignItems: 'center',
-                    py: '6rem',
+                    py: {
+                        xs: '3rem',
+                        lg: '6rem',
+                    },
                 }}>
 
                     <Box sx={{
@@ -31,17 +35,25 @@ const FaqSection = () => {
 
                 <Box sx={{
                     display: 'grid',
-                    gridTemplateColumns: '1fr 300px',
+                    gridTemplateColumns: {
+                       xs: '1fr',lg: '1fr 300px',
+                    },
+                    alignItems: 'center',
+                    gridGap: '3rem',
                 }}>
 
                     {/*    Faqs section*/}
                     <Box>
-                        faqs
+                       <Faqs/>
                     </Box>
 
                     {/*    Side Images*/}
                     <Box sx={{
                         display: 'grid',
+                        gridTemplateColumns: {
+                            xs: '1fr 1fr 1fr',
+                            lg: '1fr',
+                        },
                         justifyContent: 'center',
                     }}>
 
@@ -50,7 +62,7 @@ const FaqSection = () => {
                             justifyContent: 'center',
                             m: '1rem',
                         }}>
-                            <Image src={'/2.png'} width={270} height={360}/>
+                            <Image src={'/2.png'}  width={146} height={200}/>
                         </Box>
 
                         <Box sx={{
@@ -58,7 +70,7 @@ const FaqSection = () => {
                             justifyContent: 'center',
                             m: '1rem',
                         }}>
-                            <Image src={'/3.png'} width={270} height={360}/>
+                            <Image src={'/3.png'} width={146} height={200}/>
                         </Box>
 
                         <Box sx={{
@@ -66,7 +78,7 @@ const FaqSection = () => {
                             justifyContent: 'center',
                             m: '1rem',
                         }}>
-                            <Image src={'/1.png'} width={270} height={360}/>
+                            <Image src={'/1.png'}  width={146} height={200}/>
                         </Box>
 
                     </Box>

@@ -6,6 +6,7 @@ import TelegramIcon from '@mui/icons-material/Telegram';
 import ButtonPink from "../common/ButtonPink";
 import MenuIcon from '@mui/icons-material/Menu';
 import DrawerOutlinedButton from "../common/DrawerOutlinedButton";
+import Image from "next/image";
 
 const Header = () => {
 
@@ -112,6 +113,16 @@ const Header = () => {
                     }} color={'secondary'}>
                         <TwitterIcon fontSize={'30px'}/>
                     </IconButton>
+
+                    <IconButton sx={{
+                        display: {
+                            xs: 'none',
+                            xl: 'flex',
+                        },
+                    }}>
+                        <Image width={25} height={25} src={'/openSea.svg'}/>
+                    </IconButton>
+
                     <ButtonPink>
                         Connect
                     </ButtonPink>
