@@ -25,13 +25,13 @@ const HeroSection = () => {
             id: 3,
         },{
             imgSrc: '/3.png',
-            id: 3,
+            id: 4,
         },{
             imgSrc: '/3.png',
-            id: 3,
+            id: 5,
         },{
             imgSrc: '/3.png',
-            id: 3,
+            id: 6,
         },
     ];
 
