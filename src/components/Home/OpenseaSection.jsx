@@ -5,10 +5,12 @@ import ButtonPink from "../common/ButtonPink";
 
 const OpenseaSection = () => {
     return (
-        <Box sx={{
-            background: (theme) => theme.palette.primary.main,
-            py: '3rem',
-        }}>
+        <Box
+            sx={{
+                background: (theme) => theme.palette.primary.main,
+                py: '3rem',
+            }}
+        >
 
             <Container maxWidth={'xxl'}>
 
@@ -77,7 +79,7 @@ const OpenseaSection = () => {
                         borderRadius: '31px',
                         display: 'grid',
                         gridGap: '2rem',
-                        gridTemplateColumns: {xs: '1fr',lg: 'auto auto'},
+                        gridTemplateColumns: {xs: '1fr', lg: 'auto auto'},
                         px: {
                             xs: '1rem',
                             sm: '2rem',
