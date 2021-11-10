@@ -2,3 +2,11 @@
     align-items: center !important;
     transition: all .3s linear;
 }
+
+.link {
+    color: white;
+}
+
+.active {
+    color: rgba(244, 132, 255, .7);
+}

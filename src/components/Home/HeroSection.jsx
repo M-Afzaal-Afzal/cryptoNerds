@@ -39,7 +39,7 @@ const HeroSection = () => {
 
 
     return (
-        <Box sx={{
+        <Box id={'HOME'} sx={{
             background: (theme) => theme.palette.primary.main,
             py: '3rem',
         }}>

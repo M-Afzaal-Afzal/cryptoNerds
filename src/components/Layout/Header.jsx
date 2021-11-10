@@ -7,6 +7,7 @@ import ButtonPink from "../common/ButtonPink";
 import MenuIcon from '@mui/icons-material/Menu';
 import DrawerOutlinedButton from "../common/DrawerOutlinedButton";
 import Image from "next/image";
+import {Link} from 'react-scroll';
 
 const Header = () => {
 
@@ -70,15 +71,36 @@ const Header = () => {
                     color: '#fff',
                 }} spacing={5} alignItems={'center'} direction={'row'}>
                     {
-                        links.map(({text,id}) => (
-                            <Typography key={id} sx={{
-                                fontSize: '32px',
-                                cursor: 'pointer',
-                                color: (theme) => theme.palette.secondary.main,
-                            }} color={'secondary'} variant={'h3'}>
-                                {text}
-                            </Typography>
-                        ))
+                        links.map(({text,id}) => {
+
+                            console.log(text)
+
+                            return (
+                                <Link key={id} activeClass="active"
+                                      class={'link'}
+                                      to={text.toUpperCase()}
+                                      spy={true}
+                                      smooth={true}
+                                      hashSpy={true}
+                                      offset={50}
+                                      duration={500}
+                                      // delay={1000}
+
+                                >
+
+                                    <Typography key={id} sx={{
+                                        fontSize: '28px',
+                                        cursor: 'pointer',
+                                        // color: (theme) => theme.palette.secondary.main,
+                                    }}
+                                                // color={'secondary'}
+                                                variant={'h3'}
+                                    >
+                                        {text}
+                                    </Typography>
+                                </Link>
+                            )
+                        })
                     }
 
                 </Stack>
@@ -170,14 +192,25 @@ const Header = () => {
 
                     {
                         links.map(({text, id}) => (
-                            <Box key={id}>
-                                <DrawerOutlinedButton sx={{
-                                    color: '#fff',
-                                }} size={'large'} fullWidth>
+                            <Link key={id} activeClass="active"
+                                  class={'link'}
+                                  to={text.toUpperCase()}
+                                  spy={true}
+                                  smooth={true}
+                                  hashSpy={true}
+                                  offset={50}
+                                  duration={500}
+                                  onClick={drawerToggler}
+                                // delay={1000}
+
+                            >
+
+                                <DrawerOutlinedButton size={'large'} fullWidth>
                                     {text}
                                 </DrawerOutlinedButton>
                                 <Divider color={'#eb9fef'}/>
-                            </Box>
+
+                            </Link>
                         ))
                     }
 

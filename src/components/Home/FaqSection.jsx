@@ -6,8 +6,9 @@ import Faqs from "./Faqs";
 
 const FaqSection = () => {
     return (
-        <Box sx={{
+        <Box id={'FAQ'} sx={{
             background: (theme) => theme.palette.primary.main,
+
         }}>
             <Container maxWidth={'xxl'}>
                 <Box sx={{
