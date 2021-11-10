@@ -60,7 +60,7 @@ const RoadmapSection = () => {
                     <Timeline position={isLargerThan800px ? "alternate" : "left"}>
 
                         <TimelineItem>
-                            <TimelineOppositeContent color="text.secondary">
+                            <TimelineOppositeContent  style={{overflow: 'hidden'}} color="text.secondary">
                             <Fade left>
                                 <RoadmapHeadingWithDescription
                                     heading={'10%'}
@@ -81,7 +81,7 @@ const RoadmapSection = () => {
                         </TimelineItem>
 
                         <TimelineItem>
-                            <TimelineOppositeContent color="text.secondary">
+                            <TimelineOppositeContent  style={{overflow: 'hidden'}} color="text.secondary">
                                 <Fade right>
                                 <RoadmapHeadingWithDescription heading={'30%'}
                                                                description={`The exclusive discord opens only for CryptoNerd holders`}
@@ -98,7 +98,7 @@ const RoadmapSection = () => {
                                 )
                             }                        </TimelineItem>
                         <TimelineItem>
-                            <TimelineOppositeContent color="text.secondary">
+                            <TimelineOppositeContent  style={{overflow: 'hidden'}} color="text.secondary">
                                 <Fade left>
                                 <RoadmapHeadingWithDescription heading={'50%'}
                                                                description={`The first 10 percent of NFTs holders will automatically be enrolled in the chance to win Airdrops of NFTs `}
@@ -115,7 +115,7 @@ const RoadmapSection = () => {
                                 )
                             }                        </TimelineItem>
                         <TimelineItem>
-                            <TimelineOppositeContent color="text.secondary">
+                            <TimelineOppositeContent  style={{overflow: 'hidden'}} color="text.secondary">
                                 <Fade right>
                                 <RoadmapHeadingWithDescription heading={'80%'}
                                                                description={`Massive giveaways on the exclusive discord including prizes up to 10 eth in value. Such as MAYC, Cool Cats and more.`}
@@ -132,7 +132,7 @@ const RoadmapSection = () => {
                                 )
                             }                        </TimelineItem>
                         <TimelineItem>
-                            <TimelineOppositeContent color="text.secondary">
+                            <TimelineOppositeContent  style={{overflow: 'hidden'}} color="text.secondary">
                                 <Fade left>
                                 <RoadmapHeadingWithDescription heading={'100%'}
                                                                description={`Massive giveaways on the exclusive discord including prizes up to 10 eth in value. Such as MAYC, Cool Cats and more.`}
