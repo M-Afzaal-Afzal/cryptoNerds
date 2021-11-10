@@ -4,6 +4,7 @@ import Image from 'next/image';
 import TelegramIcon from "@mui/icons-material/Telegram";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import TwitterIcon from "@mui/icons-material/Twitter";
+import Fade from 'react-reveal/Fade';
 
 const Footer = () => {
     return (
@@ -14,6 +15,8 @@ const Footer = () => {
             // pt: '5rem',
         }}>
             <Container maxWidth={'xxl'}>
+
+                <Fade bottom cascade>
 
                 <Typography sx={{
                     textAlign: 'center',
@@ -106,6 +109,7 @@ const Footer = () => {
                     </Box>
 
                 </Box>
+                </Fade>
 
             </Container>
         </Box>

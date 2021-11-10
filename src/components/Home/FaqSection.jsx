@@ -3,6 +3,7 @@ import {Box, Container} from "@mui/material";
 import TopDashHeading from "../common/TopDashHeading";
 import Image from 'next/image';
 import Faqs from "./Faqs";
+import Fade from 'react-reveal/Fade';
 
 const FaqSection = () => {
     return (
@@ -28,10 +29,11 @@ const FaqSection = () => {
                         borderRadius: '30px',
                         mr: '1rem',
                     }}/>
-
+                    <Fade bottom>
                     <TopDashHeading>
                         FAQs
                     </TopDashHeading>
+                    </Fade>
                 </Box>
 
                 <Box sx={{
@@ -58,12 +60,16 @@ const FaqSection = () => {
                         justifyContent: 'center',
                     }}>
 
+
+
                         <Box sx={{
                             display: 'flex',
                             justifyContent: 'center',
                             m: '1rem',
                         }}>
+                        <Fade bottom>
                             <Image src={'/2.png'}  width={146} height={200}/>
+                        </Fade>
                         </Box>
 
                         <Box sx={{
@@ -71,7 +77,9 @@ const FaqSection = () => {
                             justifyContent: 'center',
                             m: '1rem',
                         }}>
+                            <Fade bottom>
                             <Image src={'/3.png'} width={146} height={200}/>
+                            </Fade>
                         </Box>
 
                         <Box sx={{
@@ -79,8 +87,11 @@ const FaqSection = () => {
                             justifyContent: 'center',
                             m: '1rem',
                         }}>
+                            <Fade bottom>
                             <Image src={'/1.png'}  width={146} height={200}/>
+                            </Fade>
                         </Box>
+
 
                     </Box>
 

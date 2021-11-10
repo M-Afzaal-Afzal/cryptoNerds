@@ -7,6 +7,7 @@ import AccordionDetails from "@mui/material/AccordionDetails";
 import AccordionSummary from "@mui/material/AccordionSummary";
 import Typography from "@mui/material/Typography";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
+import Fade from 'react-reveal/Fade';
 
 const Faqs = () => {
 
@@ -54,7 +55,7 @@ const Faqs = () => {
         <Box>
             {
                 faqs.map(({id,heading,description}) => (
-
+                    <Fade bottom>
                     <Accordion
                         key={id}
                         expanded={expanded === `panel${id}`}
@@ -72,11 +73,14 @@ const Faqs = () => {
                             }
                         }}
                     >
+
                         <AccordionSummary
                             expandIcon={<ExpandMoreIcon sx={{fontSize:30,color:'rgba(244, 132, 255, .7)'}} />}
                             aria-controls="panel1bh-content"
                             id="panel1bh-header"
                         >
+
+
                             <Typography variant="h6" sx={{
                                 width:'100%',
                                 fontFamily: `'Paytone One', sans-serif`,
@@ -85,15 +89,20 @@ const Faqs = () => {
                                 flexShrink: 0,color:'#fff', fontWeight:900}}>
                                 {heading}
                             </Typography>
+
                         </AccordionSummary>
                         <AccordionDetails>
+
+
                             <Typography variant="body1" sx={{color:'#fff',
                                 fontFamily: `'Play', sans-serif`,
                             }} >
                                 {description}
                             </Typography>
+
                         </AccordionDetails>
                     </Accordion>
+                    </Fade>
                 ))
             }
         </Box>

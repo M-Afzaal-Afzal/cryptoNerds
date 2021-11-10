@@ -6,6 +6,7 @@ import SwiperCore, {
     Navigation
 } from 'swiper';
 import useMediaQuery from "@mui/material/useMediaQuery";
+import Fade from 'react-reveal/Fade';
 
 // install Swiper modules
 SwiperCore.use([Navigation]);
@@ -59,12 +60,14 @@ const HeroSection = () => {
                                 alignItems: 'center',
                             }}>
                                 {({ isActive }) => (
+                                    <Fade bottom>
                                     <Box sx={{
                                         display: 'flex',
                                         justifyContent: "center",
                                     }}>
                                         <Image priority={true} src={imgSrc} width={isActive ? 374 : 293 } height={isActive ? 514 : 402} />
                                     </Box>
+                                    </Fade>
                                 )}
                             </SwiperSlide>
                         ))

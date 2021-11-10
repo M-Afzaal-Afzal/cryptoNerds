@@ -6,12 +6,12 @@ import TimelineItem from '@mui/lab/TimelineItem';
 import TimelineSeparator from '@mui/lab/TimelineSeparator';
 import TimelineConnector from '@mui/lab/TimelineConnector';
 import TimelineContent from '@mui/lab/TimelineContent';
-import TimelineDot from '@mui/lab/TimelineDot';
+// import TimelineDot from '@mui/lab/TimelineDot';
 import {TimelineOppositeContent} from "@mui/lab";
-import Image from 'next/image';
+// import Image from 'next/image';
 import RoadmapHeadingWithDescription from "../common/RoadmapHeadingWithDescription";
 import useMediaQuery from '@mui/material/useMediaQuery';
-
+import Fade from 'react-reveal/Fade';
 
 const RoadmapSection = () => {
 
@@ -29,16 +29,16 @@ const RoadmapSection = () => {
         }}>
             <Container maxWidth={'xxl'}>
                 {/* top Heading*/}
-
                 <Box sx={{
                     display: 'flex',
                     alignItems: 'center',
                     py: '0rem',
                 }}>
-
-                    <TopDashHeading>
-                        Roadmap
-                    </TopDashHeading>
+                    <Fade bottom>
+                        <TopDashHeading>
+                            Roadmap
+                        </TopDashHeading>
+                    </Fade>
 
                     <Box sx={{
                         flex: 1,
@@ -50,6 +50,7 @@ const RoadmapSection = () => {
 
                     }}/>
 
+
                 </Box>
 
                 <Box sx={{
@@ -57,12 +58,15 @@ const RoadmapSection = () => {
                 }}>
 
                     <Timeline position={isLargerThan800px ? "alternate" : "left"}>
+
                         <TimelineItem>
                             <TimelineOppositeContent color="text.secondary">
+                            <Fade left>
                                 <RoadmapHeadingWithDescription
                                     heading={'10%'}
                                     description={`The first 10 percent of NFTs holders will automatically be enrolled in the chance to win Airdrops of NFTs `}
                                 />
+                            </Fade>
                             </TimelineOppositeContent>
                             <TimelineSeparator>
                                 {/*<TimelineDot variant="outlined" />*/}
@@ -75,10 +79,14 @@ const RoadmapSection = () => {
                             }
 
                         </TimelineItem>
+
                         <TimelineItem>
                             <TimelineOppositeContent color="text.secondary">
+                                <Fade right>
                                 <RoadmapHeadingWithDescription heading={'30%'}
-                                                               description={`The exclusive discord opens only for CryptoNerd holders`}/>
+                                                               description={`The exclusive discord opens only for CryptoNerd holders`}
+                                />
+                                </Fade>
                             </TimelineOppositeContent>
                             <TimelineSeparator>
                                 {/*<TimelineDot variant="outlined" color="primary" />*/}
@@ -91,9 +99,11 @@ const RoadmapSection = () => {
                             }                        </TimelineItem>
                         <TimelineItem>
                             <TimelineOppositeContent color="text.secondary">
+                                <Fade left>
                                 <RoadmapHeadingWithDescription heading={'50%'}
                                                                description={`The first 10 percent of NFTs holders will automatically be enrolled in the chance to win Airdrops of NFTs `}
                                 />
+                                </Fade>
                             </TimelineOppositeContent>
                             <TimelineSeparator>
                                 {/*<TimelineDot variant="outlined" color="secondary" />*/}
@@ -106,9 +116,11 @@ const RoadmapSection = () => {
                             }                        </TimelineItem>
                         <TimelineItem>
                             <TimelineOppositeContent color="text.secondary">
+                                <Fade right>
                                 <RoadmapHeadingWithDescription heading={'80%'}
                                                                description={`Massive giveaways on the exclusive discord including prizes up to 10 eth in value. Such as MAYC, Cool Cats and more.`}
                                 />
+                                </Fade>
                             </TimelineOppositeContent>
                             <TimelineSeparator>
                                 {/*<TimelineDot variant="outlined" />*/}
@@ -121,9 +133,11 @@ const RoadmapSection = () => {
                             }                        </TimelineItem>
                         <TimelineItem>
                             <TimelineOppositeContent color="text.secondary">
+                                <Fade left>
                                 <RoadmapHeadingWithDescription heading={'100%'}
                                                                description={`Massive giveaways on the exclusive discord including prizes up to 10 eth in value. Such as MAYC, Cool Cats and more.`}
                                 />
+                                </Fade>
                             </TimelineOppositeContent>
                             <TimelineSeparator>
                                 {/*<TimelineDot variant="outlined" color="secondary" />*/}

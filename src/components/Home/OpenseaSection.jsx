@@ -2,6 +2,7 @@ import React from 'react';
 import {Box, Container, Typography} from "@mui/material";
 import Image from 'next/image';
 import ButtonPink from "../common/ButtonPink";
+import Roll from 'react-reveal/Roll';
 
 const OpenseaSection = () => {
     return (
@@ -21,51 +22,64 @@ const OpenseaSection = () => {
                     alignItems: 'end',
                     position: 'relative',
                 }}>
-                    {/* 1st Image*/}
-                    <Box sx={{
-                        ml: '2rem',
-                        zIndex: 1,
-                        gridRow: '1/-1',
-                        gridColumn: '1/2',
-                        display: {
-                            xs: 'none',
-                            xl: 'flex',
-                        },
-                        alignItems: 'flex-end',
-                    }}>
-                        <Image src={'/opensea1.png'} width={177} height={230}/>
-                    </Box>
 
-                    {/* 2nd Image*/}
-                    <Box sx={{
-                        zIndex: 1,
-                        gridRow: '1/-1',
-                        gridColumn: '2/3',
-                        display: {
-                            xs: 'none',
-                            xl: 'flex',
-                        },
-                        alignItems: 'flex-end',
-                    }}>
-                        <Image src={'/opensea2.png'} width={237} height={321}/>
+                    {/*<Roll bottom cascade>*/}
 
-                    </Box>
 
-                    {/*    3rd Image  */}
-                    <Box sx={{
-                        zIndex: 1,
-                        gridRow: '1/-1',
-                        gridColumn: '3/4',
-                        display: {
-                            xs: 'none',
-                            xl: 'flex',
-                        },
-                        alignItems: 'flex-end',
+                        {/* 1st Image*/}
+                        <Box sx={{
+                            ml: '2rem',
+                            zIndex: 1,
+                            gridRow: '1/-1',
+                            gridColumn: '1/2',
+                            display: {
+                                xs: 'none',
+                                xl: 'flex',
+                            },
+                            alignItems: 'flex-end',
+                        }}>
+                            <Roll bottom>
 
-                    }}>
-                        <Image src={'/opensea3.png'} width={177} height={230}/>
+                            <Image src={'/opensea1.png'} width={177} height={230}/>
+                            </Roll>
+                        </Box>
 
-                    </Box>
+                        {/* 2nd Image*/}
+                        <Box sx={{
+                            zIndex: 1,
+                            gridRow: '1/-1',
+                            gridColumn: '2/3',
+                            display: {
+                                xs: 'none',
+                                xl: 'flex',
+                            },
+                            alignItems: 'flex-end',
+                        }}>
+                            <Roll bottom>
+                            <Image src={'/opensea2.png'} width={237} height={321}/>
+                            </Roll>
+
+                        </Box>
+
+                        {/*    3rd Image  */}
+
+                        <Box sx={{
+                            zIndex: 1,
+                            gridRow: '1/-1',
+                            gridColumn: '3/4',
+                            display: {
+                                xs: 'none',
+                                xl: 'flex',
+                            },
+                            alignItems: 'flex-end',
+
+                        }}>
+                            <Roll bottom>
+                            <Image src={'/opensea3.png'} width={177} height={230}/>
+                            </Roll>
+
+                        </Box>
+                    {/*</Roll>*/}
 
                     {/* Open Sea Button container*/}
                     <Box sx={{
@@ -136,6 +150,7 @@ const OpenseaSection = () => {
                     }}/>
 
                 </Box>
+
 
             </Container>
 

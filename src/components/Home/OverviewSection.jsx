@@ -2,6 +2,8 @@ import React from 'react';
 import {Box, Container, Typography} from "@mui/material";
 import TopDashHeading from "../common/TopDashHeading";
 import Image from 'next/image';
+import Fade from 'react-reveal/Fade';
+
 
 const OverviewSection = () => {
     return (
@@ -12,6 +14,7 @@ const OverviewSection = () => {
             <Container maxWidth={'xxl'}>
 
                 {/* top Heading*/}
+        <Fade cascade bottom>
 
                 <Box sx={{
                     display: 'flex',
@@ -117,6 +120,7 @@ const OverviewSection = () => {
                     </Box>
 
                 </Box>
+        </Fade>
 
             </Container>
         </Box>
