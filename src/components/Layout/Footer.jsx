@@ -32,42 +32,43 @@ const Footer = () => {
                 {/* Bottom Section*/}
                 <Box sx={{
                     display: 'grid',
-                    gridTemplateColumns: {xs: '1fr',lg:'auto auto'},
-                    justifyContent: 'space-between',
+                    gridTemplateColumns: {xs: '1fr',lg:'auto'},
+                    justifyContent: 'center',
                     gridGap: '2rem',
                     alignItems: 'center',
                     pb: '4rem',
                 }}>
 
                     {/* Left Items*/}
-                    <Box>
-                        <Typography variant={'h5'} sx={{
-                            color: '#fff',
-                            ml: '1rem',
-                        }}>
-                            Stay In Touch
-                        </Typography>
-                        <Box sx={{
-                            maxWidth: '476px',
-                            width: '100%',
-                            height: '54px',
-                            background: 'linear-gradient(92.78deg, #eb9fef 0%, #03254e 100%)',
-                            borderRadius: '27px',
-                            mt: '1rem',
-                            display: 'flex',
-                            alignItems: 'center',
-                            px: '2rem',
-                            color: '#fff',
-                        }}>
-                            email@email.com
-                        </Box>
-                    </Box>
+                    {/*<Box>*/}
+                        {/*<Typography variant={'h5'} sx={{*/}
+                        {/*    color: '#fff',*/}
+                        {/*    ml: '1rem',*/}
+                        {/*}}>*/}
+                        {/*    Stay In Touch*/}
+                        {/*</Typography>*/}
+                        {/*<Box sx={{*/}
+                        {/*    maxWidth: '476px',*/}
+                        {/*    width: '100%',*/}
+                        {/*    height: '54px',*/}
+                        {/*    background: 'linear-gradient(92.78deg, #eb9fef 0%, #03254e 100%)',*/}
+                        {/*    borderRadius: '27px',*/}
+                        {/*    mt: '1rem',*/}
+                        {/*    display: 'flex',*/}
+                        {/*    alignItems: 'center',*/}
+                        {/*    px: '2rem',*/}
+                        {/*    color: '#fff',*/}
+                        {/*}}>*/}
+                        {/*    email@email.com*/}
+                        {/*</Box>*/}
+                    {/*</Box>*/}
 
                     {/* Right Items*/}
                     <Box>
                         <Typography variant={'h5'} sx={{
                             color: '#fff',
                             ml: '1rem',
+                            textAlign: 'center',
                         }}>
                             Join The Community
                         </Typography>
@@ -78,12 +79,13 @@ const Footer = () => {
                             {/* Left side icons*/}
                             <Stack sx={{
                                 color: '#fff',
+                                justifyContent: 'center',
                             }} spacing={1} alignItems={'center'} direction={'row'}>
-                                <IconButton sx={{
-                                    display:'flex',
-                                }} color={'secondary'}>
-                                    <TelegramIcon fontSize={'30px'}/>
-                                </IconButton>
+                                {/*<IconButton sx={{*/}
+                                {/*    display:'flex',*/}
+                                {/*}} color={'secondary'}>*/}
+                                {/*    <TelegramIcon fontSize={'30px'}/>*/}
+                                {/*</IconButton>*/}
 
                                 <IconButton sx={{
                                     display:'flex',

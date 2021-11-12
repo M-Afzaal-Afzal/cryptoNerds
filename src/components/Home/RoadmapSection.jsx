@@ -135,7 +135,7 @@ const RoadmapSection = () => {
                             <TimelineOppositeContent  style={{overflow: 'hidden'}} color="text.secondary">
                                 <Fade left>
                                 <RoadmapHeadingWithDescription heading={'100%'}
-                                                               description={`Massive giveaways on the exclusive discord including prizes up to 10 eth in value. Such as MAYC, Cool Cats and more.`}
+                                                               description={`SOLD OUT!! - Staking will be available very soon, and very exciting announcements.`}
                                 />
                                 </Fade>
                             </TimelineOppositeContent>

@@ -109,14 +109,14 @@ const Header = () => {
                 <Stack sx={{
                     color: '#fff',
                 }} spacing={1} alignItems={'center'} direction={'row'}>
-                    <IconButton sx={{
-                        display: {
-                            xs: 'none',
-                            xl: 'flex',
-                        },
-                    }} color={'secondary'}>
-                        <TelegramIcon fontSize={'30px'}/>
-                    </IconButton>
+                    {/*<IconButton sx={{*/}
+                    {/*    display: {*/}
+                    {/*        xs: 'none',*/}
+                    {/*        xl: 'flex',*/}
+                    {/*    },*/}
+                    {/*}} color={'secondary'}>*/}
+                    {/*    <TelegramIcon fontSize={'30px'}/>*/}
+                    {/*</IconButton>*/}
 
                     <IconButton sx={{
                         display: {

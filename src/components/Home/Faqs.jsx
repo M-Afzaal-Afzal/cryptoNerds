@@ -33,7 +33,7 @@ const Faqs = () => {
         },{
             id: 4,
             heading: `When is the CryptoNerd launch ?`,
-            description:`Crypto nerds will be dropped as a Stealth launch. Keep your eyes peeled...`
+            description:`CryptoNerds will be dropped as a Stealth launch. Keep your eyes peeled...`
         },{
             id: 5,
             heading: `How many CryptoNerds exist on the ethereum blockchain ?`,
@@ -42,7 +42,7 @@ const Faqs = () => {
         {
             id: 6,
             heading: `Do I own the commercial rights to my CryptoNerd ?`,
-            description:`Yes you have full creative and commercial rights over.`
+            description:`Yes you have full creative and commercial rights.`
         },
         {
             id: 7,
