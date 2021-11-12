@@ -119,11 +119,12 @@ const OpenseaSection = () => {
                                     lg: 'left',
                                 },
                                 fontSize: '2rem',
-                                color: theme => theme.palette.primary.main,
+                                // color: theme => theme.palette.primary.main,
+                                color: '#fff'
                             }}
 
                         >
-                            Have a look at the market
+                           Visit Opensea
                         </Typography>
                         <ButtonPink sx={{
                             // mr: '4rem',

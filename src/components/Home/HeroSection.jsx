@@ -25,14 +25,8 @@ const HeroSection = () => {
             imgSrc: '/3.png',
             id: 3,
         },{
-            imgSrc: '/3.png',
+            imgSrc: '/opensea1.png',
             id: 4,
-        },{
-            imgSrc: '/3.png',
-            id: 5,
-        },{
-            imgSrc: '/3.png',
-            id: 6,
         },
     ];
 
