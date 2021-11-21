@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import {Box, Container, Divider, Drawer, IconButton, Stack, Typography} from "@mui/material";
 import TwitterIcon from '@mui/icons-material/Twitter';
 import InstagramIcon from '@mui/icons-material/Instagram';
-import TelegramIcon from '@mui/icons-material/Telegram';
+// import TelegramIcon from '@mui/icons-material/Telegram';
 import ButtonPink from "../common/ButtonPink";
 import MenuIcon from '@mui/icons-material/Menu';
 import DrawerOutlinedButton from "../common/DrawerOutlinedButton";
@@ -118,7 +118,12 @@ const Header = () => {
                     {/*    <TelegramIcon fontSize={'30px'}/>*/}
                     {/*</IconButton>*/}
 
-                    <IconButton sx={{
+                    <IconButton
+                        component={'a'}
+                                 href={'https://www.instagram.com/cryptonerds_nft/'}
+                                 target={'_blank'}
+                                 rel={'noreferrer'}
+                                sx={{
                         display: {
                             xs: 'none',
                             xl: 'flex',
@@ -127,7 +132,12 @@ const Header = () => {
                         <InstagramIcon fontSize={'30px'}/>
                     </IconButton>
 
-                    <IconButton sx={{
+                    <IconButton
+                        component={'a'}
+                        href={'https://twitter.com/CryptoNerdsNFT1?s=20'}
+                        target={'_blank'}
+                        rel={'noreferrer'}
+                        sx={{
                         display: {
                             xs: 'none',
                             xl: 'flex',
@@ -136,7 +146,12 @@ const Header = () => {
                         <TwitterIcon fontSize={'30px'}/>
                     </IconButton>
 
-                    <IconButton sx={{
+                    <IconButton
+                        component={'a'}
+                        href={'https://opensea.io/'}
+                        target={'_blank'}
+                        rel={'noreferrer'}
+                        sx={{
                         display: {
                             xs: 'none',
                             xl: 'flex',

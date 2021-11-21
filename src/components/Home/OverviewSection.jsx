@@ -82,7 +82,7 @@ const OverviewSection = () => {
                                 xl: 0,
                             }, transform: {xs: 'unset',lg: 'translate(-50%,-50%)',xl: 'translate(-0,-50%)'}
                         }}>
-                            <Image src={'/overview.png'} width={658} height={361}/>
+                            <Image quality={100} src={'/overview.png'} width={658} height={361}/>
                         </Box>
 
                     </Box>

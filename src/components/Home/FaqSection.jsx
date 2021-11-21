@@ -66,9 +66,12 @@ const FaqSection = () => {
                             display: 'flex',
                             justifyContent: 'center',
                             m: '1rem',
+                            '& img': {
+                                borderRadius: '15px',
+                            }
                         }}>
                         <Fade bottom>
-                            <Image src={'/2.png'}  width={146} height={200}/>
+                            <Image quality={100} src={'/2.png'}  width={200} height={200}/>
                         </Fade>
                         </Box>
 
@@ -76,9 +79,12 @@ const FaqSection = () => {
                             display: 'flex',
                             justifyContent: 'center',
                             m: '1rem',
+                            '& img': {
+                                borderRadius: '15px',
+                            }
                         }}>
                             <Fade bottom>
-                            <Image src={'/3.png'} width={146} height={200}/>
+                            <Image quality={100} src={'/3.png'} width={200} height={200}/>
                             </Fade>
                         </Box>
 
@@ -86,9 +92,12 @@ const FaqSection = () => {
                             display: 'flex',
                             justifyContent: 'center',
                             m: '1rem',
+                            '& img': {
+                                borderRadius: '15px',
+                            }
                         }}>
                             <Fade bottom>
-                            <Image src={'/1.png'}  width={146} height={200}/>
+                            <Image quality={100} src={'/1.png'}  width={200} height={200}/>
                             </Fade>
                         </Box>
 

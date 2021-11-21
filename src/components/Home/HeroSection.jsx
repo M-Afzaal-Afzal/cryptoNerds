@@ -25,8 +25,14 @@ const HeroSection = () => {
             imgSrc: '/3.png',
             id: 3,
         },{
-            imgSrc: '/opensea1.png',
+            imgSrc: '/4.png',
             id: 4,
+        },{
+            imgSrc: '/5.png',
+            id: 5,
+        },{
+            imgSrc: '/6.png',
+            id: 6,
         },
     ];
 
@@ -58,8 +64,11 @@ const HeroSection = () => {
                                     <Box sx={{
                                         display: 'flex',
                                         justifyContent: "center",
+                                        '& img': {
+                                            borderRadius: '15px',
+                                        }
                                     }}>
-                                        <Image priority={true} src={imgSrc} width={isActive ? 374 : 293 } height={isActive ? 514 : 402} />
+                                        <Image quality={100} priority={true} src={imgSrc} width={isActive ? 374 : 293 } height={isActive ? 514 : 402} />
                                     </Box>
                                     </Fade>
                                 )}

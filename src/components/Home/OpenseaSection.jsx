@@ -40,7 +40,7 @@ const OpenseaSection = () => {
                         }}>
                             <Roll bottom>
 
-                            <Image src={'/opensea1.png'} width={177} height={230}/>
+                            <Image quality={100} src={'/opensea1.png'} width={177} height={230}/>
                             </Roll>
                         </Box>
 
@@ -56,7 +56,7 @@ const OpenseaSection = () => {
                             alignItems: 'flex-end',
                         }}>
                             <Roll bottom>
-                            <Image src={'/opensea2.png'} width={237} height={321}/>
+                            <Image quality={100} src={'/opensea2.png'} width={237} height={321}/>
                             </Roll>
 
                         </Box>
@@ -75,7 +75,7 @@ const OpenseaSection = () => {
 
                         }}>
                             <Roll bottom>
-                            <Image src={'/opensea3.png'} width={177} height={230}/>
+                            <Image quality={100} src={'/opensea3.png'} width={177} height={230}/>
                             </Roll>
 
                         </Box>
