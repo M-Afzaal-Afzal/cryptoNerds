@@ -157,7 +157,7 @@ const Header = () => {
                             xl: 'flex',
                         },
                     }}>
-                        <img width={25} height={25} src={'/openSea.png'}/>
+                        <Image priority={true} width={25} height={25} src={'/opensea.svg'}/>
                     </IconButton>
 
                     <ButtonPink>

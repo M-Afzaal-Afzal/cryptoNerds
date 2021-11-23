@@ -112,7 +112,7 @@ const Footer = () => {
                                                 target={'_blank'}
                                                 rel={'noreferrer'}
                                     >
-                                        <img width={25} height={25} src={'/openSea.png'}/>
+                                        <Image priority={true} width={25} height={25} src={'/opensea.png'}/>
                                     </IconButton>
                                 </Stack>
 
