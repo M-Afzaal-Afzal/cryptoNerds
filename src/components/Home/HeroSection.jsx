@@ -68,7 +68,7 @@ const HeroSection = () => {
                                             borderRadius: '15px',
                                         }
                                     }}>
-                                        <Image quality={100} priority={true} src={imgSrc} width={isActive ? 374 : 293 } height={isActive ? 514 : 402} />
+                                        <Image quality={100} priority={true} src={imgSrc} width={isActive ? 514 : 300 } height={isActive ? 514 : 300} />
                                     </Box>
                                     </Fade>
                                 )}
