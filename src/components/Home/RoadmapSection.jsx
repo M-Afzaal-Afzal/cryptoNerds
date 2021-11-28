@@ -101,7 +101,7 @@ const RoadmapSection = () => {
                             <TimelineOppositeContent  style={{overflow: 'hidden'}} color="text.secondary">
                                 <Fade left>
                                 <RoadmapHeadingWithDescription heading={'50%'}
-                                                               description={`The first 10 percent of NFTs holders will automatically be enrolled in the chance to win Airdrops of NFTs `}
+                                                               description={`Marketing starts with massive promotions by influencers.`}
                                 />
                                 </Fade>
                             </TimelineOppositeContent>

@@ -82,7 +82,7 @@ const OpenseaSection = () => {
                     {/*</Roll>*/}
 
                     {/* Open Sea Button container*/}
-                    <Box sx={{
+                    <Box  sx={{
 
                         marginTop: 'auto',
                         // height: '140px',
@@ -126,7 +126,11 @@ const OpenseaSection = () => {
                         >
                            Visit Opensea
                         </Typography>
-                        <ButtonPink sx={{
+
+                        <ButtonPink   component={'a'}
+                                      target={'_blank'}
+                                      rel={'noreferrer'}
+                                      href={'https://opensea.io/'} sx={{
                             // mr: '4rem',
                         }}>
                             Opensea
