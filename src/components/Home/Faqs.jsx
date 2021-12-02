@@ -20,7 +20,7 @@ const Faqs = () => {
         {
             id: 1,
             heading: `How much will it cost to mint these NFT’s?`,
-            description: `It will cost you 0.04 Ethereum for one CryptoNerd.`
+            description: `The first 888 CryptoNerds are free and after that, it will cost 0.04 ETH each to mint.`
         },
         {
             id: 2,

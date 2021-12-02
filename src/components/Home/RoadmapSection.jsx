@@ -64,7 +64,7 @@ const RoadmapSection = () => {
                             <Fade left>
                                 <RoadmapHeadingWithDescription
                                     heading={'10%'}
-                                    description={`The first 10 percent of NFTs holders will automatically be enrolled in the chance to win Airdrops of NFTs `}
+                                    description={`The first 10 percent of NFT CryptoNerd holders will automatically be enrolled in giveaways valued at over 5 ETH.`}
                                 />
                             </Fade>
                             </TimelineOppositeContent>
@@ -101,7 +101,7 @@ const RoadmapSection = () => {
                             <TimelineOppositeContent  style={{overflow: 'hidden'}} color="text.secondary">
                                 <Fade left>
                                 <RoadmapHeadingWithDescription heading={'50%'}
-                                                               description={`Marketing starts with massive promotions by influencers.`}
+                                                               description={`CryptoNerds Exclusive Merch store gets unlocked (T-shirts with your Avatar available as well as hoodies, hats and much more to come.)`}
                                 />
                                 </Fade>
                             </TimelineOppositeContent>
@@ -118,7 +118,7 @@ const RoadmapSection = () => {
                             <TimelineOppositeContent  style={{overflow: 'hidden'}} color="text.secondary">
                                 <Fade right>
                                 <RoadmapHeadingWithDescription heading={'80%'}
-                                                               description={`Massive giveaways on the exclusive discord including prizes up to 10 eth in value. Such as MAYC, Cool Cats and more.`}
+                                                               description={`We’ll be holding some NFT contests and giveaways! Winners to be paid in both crypto and NFTs!`}
                                 />
                                 </Fade>
                             </TimelineOppositeContent>
@@ -135,7 +135,7 @@ const RoadmapSection = () => {
                             <TimelineOppositeContent  style={{overflow: 'hidden'}} color="text.secondary">
                                 <Fade left>
                                 <RoadmapHeadingWithDescription heading={'100%'}
-                                                               description={`SOLD OUT!! - Staking will be available very soon, and very exciting announcements.`}
+                                                               description={`SOLD OUT!! - We have some massive plans for the future utility of CryptoNerds. As soon as CryptoNerds have sold out we will be working tirelessly on roadmap 2.0. Roadmap 2.0 includes some exciting news such as Staking and 3D models for use in the metaverse and much more!`}
                                 />
                                 </Fade>
                             </TimelineOppositeContent>
